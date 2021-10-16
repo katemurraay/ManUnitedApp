@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">117349221_Assignment1</string>
+
+    <string name="tv_empty"> </string>
+    <string name="tv_name">Name: </string>
+    <string name="tv_age">Age: </string>
+    <string name="tv_position">Position: </string>
+    <string name="tv_team">Team: </string>
+
+
+
+</resources>
