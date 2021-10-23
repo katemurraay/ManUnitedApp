@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,7 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView tvPlayerNo = null;
     private TextView tvTeam = null;
     private ImageView imageView = null;
-
+    private Button button =null;
 
 
 
@@ -34,6 +35,7 @@ public class ProfileActivity extends AppCompatActivity {
         tvTeam = findViewById(R.id.tvTeam);
         tvPosition = findViewById(R.id.tvPosition);
         imageView = findViewById(R.id.ivPlayer);
+        button = findViewById(R.id.button);
 
         String imgName = player.getImage();
         imgName = imgName.substring(0, imgName.indexOf("."));
@@ -45,5 +47,13 @@ public class ProfileActivity extends AppCompatActivity {
         tvPlayerNo.setText(player.getId());
         tvName.setText(player.getName());
         tvTeam.setText(player.getTeam());
+        button.setOnClickListener((v)->{
+            intent = new Intent(ProfileActivity.this, FurtherInfoActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("player", player);
+            intent.putExtras(bundle);
+            startActivity(intent);
+
+        });
     }
 }

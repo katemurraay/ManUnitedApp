@@ -15,13 +15,17 @@ public class Player implements Serializable {
     private String image;
     private String team;
 
-    public Player(String id, String age, String name, String position, String image, String team ) {
+
+    private String url;
+
+    public Player(String id, String age, String name, String position, String image, String team, String url ) {
         this.id = id;
         this.age = age;
         this.position = position;
         this.name = name;
         this.image = image;
         this.team =team;
+        this.url = url;
     }
     public Player() {
         id = "";
@@ -30,6 +34,7 @@ public class Player implements Serializable {
         age = "";
         image ="";
         team ="";
+        url = "";
 
     }
 
@@ -65,6 +70,14 @@ public class Player implements Serializable {
         this.age = age;
 
     }
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     public String getImage() {
         return image;
     }

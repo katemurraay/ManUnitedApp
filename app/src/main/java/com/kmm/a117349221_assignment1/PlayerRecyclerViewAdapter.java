@@ -46,28 +46,38 @@ private Player[] players;
         Player player = players[position];
         holder.tvName.setText(player.getName());
         holder.tvPosition.setText(player.getPosition());
+        String imgName = player.getImage();
+        imgName = imgName.substring(0, imgName.indexOf("."));
+        int imgID = context.getResources().getIdentifier(imgName, "drawable", context.getPackageName());
+        holder.ivPlayer.setImageResource(imgID);
         holder.llPlayer.setOnClickListener(v -> {
-            Intent intent = new Intent(context, ProfileActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("player", player);
-            intent.putExtras(bundle);
-            context.startActivity(intent);
-
+            getProfileActivity(context, player);
+        });
+        holder.ivPlayer.setOnClickListener(v ->{
+            getProfileActivity(context, player);
         });
 
 
     }
 
-
+public void getProfileActivity (Context c, Player player){
+    Intent intent = new Intent(c, ProfileActivity.class);
+    Bundle bundle = new Bundle();
+    bundle.putSerializable("player", player);
+    intent.putExtras(bundle);
+    c.startActivity(intent);
+}
     public class RecyclerCustomView extends RecyclerView.ViewHolder{
 public TextView tvName, tvPosition;
 public LinearLayout llPlayer;
+public ImageView ivPlayer;
 
         public RecyclerCustomView(@NonNull View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tvName);
             tvPosition = itemView.findViewById(R.id.tvPosition);
             llPlayer = itemView.findViewById(R.id.llPlayer);
+            ivPlayer = itemView.findViewById(R.id.ivPlayer);
 
 
         }

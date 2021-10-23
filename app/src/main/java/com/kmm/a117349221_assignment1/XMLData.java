@@ -43,6 +43,7 @@ public class XMLData {
         NodeList positionList = document.getElementsByTagName("position");
         NodeList imageList = document.getElementsByTagName("image");
         NodeList teamList = document.getElementsByTagName("team");
+        NodeList urlList = document.getElementsByTagName("url");
         data = new Player[nameList.getLength()];
 
         for (int i = 0; i < data.length; i ++){
@@ -52,9 +53,9 @@ public class XMLData {
             String position = positionList.item(i).getFirstChild().getNodeValue();
             String team = teamList.item(i).getFirstChild().getNodeValue();
             String image = imageList.item(i).getFirstChild().getNodeValue();
+            String url = urlList.item(i).getFirstChild().getNodeValue();
 
-
-            data[i] = new Player(id, age, name, position, image,team);
+            data[i] = new Player(id, age, name, position, image,team, url);
 
         }
     }

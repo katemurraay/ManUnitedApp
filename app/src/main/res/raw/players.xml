@@ -8,6 +8,7 @@
         <position>Goalkeeper</position>
         <image>david.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/david-de-gea</url>
     </player>
     <player>
         <id>2</id>
@@ -16,6 +17,7 @@
         <position>Defender</position>
         <image>victor.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/victor-lindelof</url>
     </player>
 
     <player>
@@ -25,6 +27,7 @@
         <position>Defender</position>
         <image>bailly.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/eric-bailly</url>
     </player>
     <player>
         <id>4</id>
@@ -33,6 +36,7 @@
         <position>Defender</position>
         <image>jones.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/phil-jones</url>
     </player>
     <player>
         <id>5</id>
@@ -41,6 +45,7 @@
         <position>Defender</position>
         <image>maguire.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/harry-maguire</url>
     </player>
     <player>
         <id>6</id>
@@ -49,6 +54,7 @@
         <position>Midfielder</position>
         <image>pogba.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/paul-pogba</url>
     </player>
     <player>
         <id>7</id>
@@ -57,6 +63,7 @@
         <position>Forward</position>
         <image>ronaldo.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/ronaldo</url>
     </player>
     <player>
         <id>8</id>
@@ -65,6 +72,7 @@
         <position>Midfielder</position>
         <image>mata.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/juan-mata</url>
     </player>
     <player>
         <id>9</id>
@@ -73,6 +81,7 @@
         <position>Forward</position>
         <image>martial.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/anthony-martial</url>
     </player>
     <player>
         <id>10</id>
@@ -81,6 +90,7 @@
         <position>Forward</position>
         <image>rashford.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/marcus-rashford</url>
     </player>
     <player>
         <id>11</id>
@@ -89,6 +99,7 @@
         <position>Forward</position>
         <image>greenwood.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/mason-greenwood</url>
     </player>
     <player>
         <id>13</id>
@@ -97,6 +108,7 @@
         <position>Goalkeeper</position>
         <image>grant.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/lee-grant</url>
     </player>
     <player>
         <id>14</id>
@@ -105,6 +117,7 @@
         <position>Midfielder</position>
         <image>lingard.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/jesse-lingard</url>
     </player>
     <player>
         <id>16</id>
@@ -113,6 +126,7 @@
         <position>Forward</position>
         <image>diallo.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/amad-diallo</url>
     </player>
 
     <player>
@@ -122,6 +136,7 @@
         <position>Midfielder</position>
         <image>fred.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/fred</url>
     </player>
     <player>
         <id>18</id>
@@ -130,6 +145,8 @@
         <position>Midfielder</position>
         <image>fernandes.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/bruno-fernandes</url>
+
     </player>
 
     <player>
@@ -139,6 +156,7 @@
         <position>Defender</position>
         <image>varane.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/raphael-varane</url>
     </player>
     <player>
         <id>20</id>
@@ -147,6 +165,8 @@
         <position>Defender</position>
         <image>dalot.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/diogo-dalot</url>
+
     </player>
 
     <player>
@@ -156,6 +176,7 @@
         <position>Forward</position>
         <image>cavani.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/edinson-cavani</url>
     </player>
 
     <player>
@@ -165,6 +186,7 @@
         <position>Goalkeeper</position>
         <image>heaton.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/tom-heaton</url>
     </player>
 
     <player>
@@ -174,6 +196,7 @@
         <position>Defender</position>
         <image>shaw.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/luke-shaw</url>
     </player>
 
     <player>
@@ -183,6 +206,7 @@
         <position>Forward</position>
         <image>sancho.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/jadon-sancho</url>
     </player>
 
     <player>
@@ -192,6 +216,7 @@
         <position>Goalkeeper</position>
         <image>henderson.jpg</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/dean-henderson</url>
     </player>
     <player>
         <id>27</id>
@@ -200,6 +225,7 @@
         <position>Defender</position>
         <image>telles.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/alex-telles</url>
     </player>
 
     <player>
@@ -209,6 +235,7 @@
         <position>Defender</position>
         <image>aaron.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/aaron-wan-bissaka</url>
 
     </player>
 
@@ -219,6 +246,7 @@
         <position>Midfielder</position>
         <image>matic.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/nemanja-matic</url>
     </player>
 
 
@@ -229,6 +257,7 @@
         <position>Midfielder</position>
         <image>donny.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/donny-van-de-beek</url>
 
     </player>
 
@@ -239,6 +268,7 @@
         <position>Midfielder</position>
         <image>scott.png</image>
         <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/scott-mctominay</url>
     </player>
 
 </PlayerData>

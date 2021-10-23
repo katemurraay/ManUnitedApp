@@ -6,6 +6,15 @@
     android:layout_height="wrap_content">
 
 
+    <ImageView
+        android:id="@+id/ivPlayer"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/tv_empty"
+        android:padding="5dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
         android:id="@+id/llPlayer"
