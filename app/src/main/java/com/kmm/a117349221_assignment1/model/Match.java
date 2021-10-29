@@ -1,6 +1,6 @@
 package com.kmm.a117349221_assignment1.model;
 
-public class LastMatchStatistics {
+public class Match {
     private String playerId, name, date, passes, noPasses, thirdPasses,thirdNoPasses;
     private String tacklesWon, duels, duelsWon, aerialDuels, aerialDuelsWon, interceptions, interceptionsWon;
     private String minutesPlayer, redCards, yellowCards;
@@ -141,7 +141,7 @@ public class LastMatchStatistics {
         this.yellowCards = yellowCards;
     }
 //</editor-fold>
-    public LastMatchStatistics(String playerId, String name, String date, String passes, String noPasses, String thirdPasses, String thirdNoPasses, String tacklesWon, String duels, String duelsWon, String aerialDuels, String aerialDuelsWon, String interceptions, String interceptionsWon, String minutesPlayer, String redCards, String yellowCards) {
+    public Match(String playerId, String name, String date, String passes, String noPasses, String thirdPasses, String thirdNoPasses, String tacklesWon, String duels, String duelsWon, String aerialDuels, String aerialDuelsWon, String interceptions, String interceptionsWon, String minutesPlayer, String redCards, String yellowCards) {
         this.playerId = playerId;
         this.name = name;
         this.date = date;

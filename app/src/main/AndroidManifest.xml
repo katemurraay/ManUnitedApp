@@ -16,7 +16,7 @@
         <activity android:name=".WebActivity" />
         <activity android:name=".FurtherInfoActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".ListActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

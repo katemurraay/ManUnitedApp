@@ -8,7 +8,10 @@
     <string name="tv_dob">DATE OF BIRTH: </string>
     <string name="tv_country">COUNTRY: </string>
     <string name="tv_joined">JOINED: </string>
-
+<string name="tv_midfielder">MIDFIELDERS</string>
+<string name="tv_goalkeeper">GOALKEEPERS</string>
+<string name="tv_forward">FORWARDS</string>
+<string name="tv_defender">DEFENDERS</string>
 
 
 </resources>
