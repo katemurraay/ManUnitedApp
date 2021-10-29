@@ -6,6 +6,10 @@
         <age>30</age>
         <name>David de Gea</name>
         <position>Goalkeeper</position>
+        <appearances>453</appearances>
+        <dob>07/11/1990</dob>
+        <joinedDate>29/06/2011</joinedDate>
+        <country>Spain</country>
         <image>david.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/david-de-gea</url>
@@ -15,6 +19,10 @@
         <age>27</age>
         <name>Victor Lindelöf</name>
         <position>Defender</position>
+        <appearances>171</appearances>
+        <dob>17/06/1994</dob>
+        <joinedDate>01/07/2017</joinedDate>
+        <country>Sweden</country>
         <image>victor.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/victor-lindelof</url>
@@ -25,6 +33,10 @@
         <age>27</age>
         <name>Eric Bailly</name>
         <position>Defender</position>
+        <appearances>107</appearances>
+        <dob>12/04/1994</dob>
+        <joinedDate>08/06/2016</joinedDate>
+        <country>Ivory Coast</country>
         <image>bailly.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/eric-bailly</url>
@@ -34,6 +46,10 @@
         <age>29</age>
         <name>Phil Jones</name>
         <position>Defender</position>
+        <appearances>224</appearances>
+        <dob>21/02/1992</dob>
+        <joinedDate>01/07/2011</joinedDate>
+        <country>England</country>
         <image>jones.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/phil-jones</url>
@@ -43,7 +59,11 @@
         <age>28</age>
         <name>Harry Maguire</name>
         <position>Defender</position>
-        <image>maguire.png</image>
+        <appearances>117</appearances>
+        <dob>05/03/1993</dob>
+        <joinedDate>05/08/2019</joinedDate>
+        <country>England</country>
+         <image>maguire.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/harry-maguire</url>
     </player>
@@ -52,6 +72,10 @@
         <age>28</age>
         <name>Paul Pogba</name>
         <position>Midfielder</position>
+        <appearances>218</appearances>
+        <dob>15/03/1993</dob>
+        <joinedDate>08/08/2016</joinedDate>
+        <country>France</country>
         <image>pogba.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/paul-pogba</url>
@@ -61,6 +85,10 @@
         <age>36</age>
         <name>Cristiano Ronaldo</name>
         <position>Forward</position>
+        <appearances>301</appearances>
+        <dob>05/02/1985</dob>
+        <joinedDate>31/08/2021</joinedDate>
+        <country>Portugal</country>
         <image>ronaldo.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/ronaldo</url>
@@ -70,6 +98,10 @@
         <age>33</age>
         <name>Juan Mata</name>
         <position>Midfielder</position>
+        <appearances>274</appearances>
+        <dob>28/04/1988</dob>
+        <joinedDate>25/01/2014</joinedDate>
+        <country>Spain</country>
         <image>mata.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/juan-mata</url>
@@ -79,6 +111,10 @@
         <age>25</age>
         <name>Anthony Martial</name>
         <position>Forward</position>
+        <appearances>265</appearances>
+        <dob>05/12/1995</dob>
+        <joinedDate>01/09/2015</joinedDate>
+        <country>France</country>
         <image>martial.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/anthony-martial</url>
@@ -88,6 +124,10 @@
         <age>23</age>
         <name>Marcus Rashford</name>
         <position>Forward</position>
+        <appearances>274</appearances>
+        <dob>31/10/1997</dob>
+        <joinedDate>01/07/2014</joinedDate>
+        <country>England</country>
         <image>rashford.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/marcus-rashford</url>
@@ -97,6 +137,10 @@
         <age>20</age>
         <name>Mason Greenword</name>
         <position>Forward</position>
+        <appearances>117</appearances>
+        <dob>01/10/2001</dob>
+        <joinedDate>01/07/2018</joinedDate>
+        <country>England</country>
         <image>greenwood.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/mason-greenwood</url>
@@ -106,6 +150,10 @@
         <age>38</age>
         <name>Lee Grant</name>
         <position>Goalkeeper</position>
+        <appearances>2</appearances>
+        <dob>27/01/1983</dob>
+        <joinedDate>03/07/2018</joinedDate>
+        <country>England</country>
         <image>grant.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/lee-grant</url>
@@ -115,15 +163,36 @@
         <age>28</age>
         <name>Jesse Lingard</name>
         <position>Midfielder</position>
+        <appearances>217</appearances>
+        <dob>15/12/1992</dob>
+        <joinedDate>01/07/2009</joinedDate>
+        <country>England</country>
         <image>lingard.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/jesse-lingard</url>
+    </player>
+    <player>
+        <id>15</id>
+        <age>25</age>
+        <name>Andreas Pereira</name>
+        <position>Midfielder</position>
+        <appearances>75</appearances>
+        <dob>01/01/1996</dob>
+        <joinedDate>01/07/2012</joinedDate>
+        <country>Brazil</country>
+        <image>pereira.png</image>
+        <team>Manchester United</team>
+        <url>https://www.manutd.com/en/players-and-staff/detail/andreas-pereira</url>
     </player>
     <player>
         <id>16</id>
         <age>19</age>
         <name>Amad Diallo</name>
         <position>Forward</position>
+        <appearances>8</appearances>
+        <dob>11/07/2002</dob>
+        <joinedDate>07/01/2021</joinedDate>
+        <country>Ivory Coast</country>
         <image>diallo.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/amad-diallo</url>
@@ -134,6 +203,10 @@
         <age>28</age>
         <name>Fred</name>
         <position>Midfielder</position>
+        <appearances>131</appearances>
+        <dob>05/03/1993</dob>
+        <joinedDate>21/06/2018</joinedDate>
+        <country>Brazil</country>
         <image>fred.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/fred</url>
@@ -143,6 +216,10 @@
         <age>27</age>
         <name>Bruno Fernandes</name>
         <position>Midfielder</position>
+        <appearances>93</appearances>
+        <dob>08/09/1994</dob>
+        <joinedDate>30/09/2020</joinedDate>
+        <country>Portugal</country>
         <image>fernandes.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/bruno-fernandes</url>
@@ -154,6 +231,10 @@
         <age>28</age>
         <name>Raphaël Varane</name>
         <position>Defender</position>
+        <appearances>7</appearances>
+        <dob>25/04/1993</dob>
+        <joinedDate>14/08/2021</joinedDate>
+        <country>French</country>
         <image>varane.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/raphael-varane</url>
@@ -163,6 +244,10 @@
         <age>22</age>
         <name>Diogo Dalot</name>
         <position>Defender</position>
+        <appearances>41</appearances>
+        <dob>18/03/1999</dob>
+        <joinedDate>06/06/2018</joinedDate>
+        <country>Portugal</country>
         <image>dalot.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/diogo-dalot</url>
@@ -174,6 +259,10 @@
         <age>34</age>
         <name>Edinson Cavani</name>
         <position>Forward</position>
+        <appearances>45</appearances>
+        <dob>14/02/1987</dob>
+        <joinedDate>05/10/2020</joinedDate>
+        <country>Uruguay</country>
         <image>cavani.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/edinson-cavani</url>
@@ -184,6 +273,10 @@
         <age>35</age>
         <name>Tom Heaton</name>
         <position>Goalkeeper</position>
+        <appearances>0</appearances>
+        <dob>15/04/1986</dob>
+        <joinedDate>02/07/2021</joinedDate>
+        <country>England</country>
         <image>heaton.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/tom-heaton</url>
@@ -194,6 +287,10 @@
         <age>26</age>
         <name>Luke Shaw</name>
         <position>Defender</position>
+        <appearances>197</appearances>
+        <dob>12/07/1995</dob>
+        <joinedDate>27/06/2014</joinedDate>
+        <country>England</country>
         <image>shaw.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/luke-shaw</url>
@@ -204,6 +301,10 @@
         <age>21</age>
         <name>Jadon Sancho</name>
         <position>Forward</position>
+        <appearances>11</appearances>
+        <dob>25/03/2000</dob>
+        <joinedDate>23/07/2021</joinedDate>
+        <country>England</country>
         <image>sancho.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/jadon-sancho</url>
@@ -214,6 +315,10 @@
         <age>24</age>
         <name>Dean Henderson</name>
         <position>Goalkeeper</position>
+        <appearances>27</appearances>
+        <dob>12/03/1997</dob>
+        <joinedDate>01/08/2013</joinedDate>
+        <country>England</country>
         <image>henderson.jpg</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/dean-henderson</url>
@@ -223,6 +328,10 @@
         <age>28</age>
         <name>Alex Telles</name>
         <position>Defender</position>
+        <appearances>26</appearances>
+        <dob>15/12/1992</dob>
+        <joinedDate>05/10/2020</joinedDate>
+        <country>Brazil</country>
         <image>telles.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/alex-telles</url>
@@ -233,6 +342,10 @@
         <age>23</age>
         <name>Aaron Wan-Bissaka</name>
         <position>Defender</position>
+        <appearances>111</appearances>
+        <dob>26/11/1997</dob>
+        <joinedDate>29/06/2019</joinedDate>
+        <country>England</country>
         <image>aaron.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/aaron-wan-bissaka</url>
@@ -244,6 +357,10 @@
         <age>33</age>
         <name>Nemenja Matic</name>
         <position>Midfielder</position>
+        <appearances>166</appearances>
+        <dob>01/08/1988</dob>
+        <joinedDate>31/07/2017</joinedDate>
+        <country>Serbia</country>
         <image>matic.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/nemanja-matic</url>
@@ -255,6 +372,10 @@
         <age>24</age>
         <name>Donny van de Beek</name>
         <position>Midfielder</position>
+        <appearances>39</appearances>
+        <dob>18/04/1997</dob>
+        <joinedDate>02/09/2020</joinedDate>
+        <country>Netherlands</country>
         <image>donny.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/donny-van-de-beek</url>
@@ -266,6 +387,10 @@
         <age>24</age>
         <name>Scott McTominay</name>
         <position>Midfielder</position>
+        <appearances>142</appearances>
+        <dob>08/12/1996</dob>
+        <joinedDate>01/07/2012</joinedDate>
+        <country>Scotland</country>
         <image>scott.png</image>
         <team>Manchester United</team>
         <url>https://www.manutd.com/en/players-and-staff/detail/scott-mctominay</url>

@@ -2,10 +2,13 @@
     <string name="app_name">117349221_Assignment1</string>
 
     <string name="tv_empty"> </string>
-    <string name="tv_name">Name: </string>
-    <string name="tv_age">Age: </string>
-    <string name="tv_position">Position: </string>
-    <string name="tv_team">Team: </string>
+    <string name="tv_position">POSITION: </string>
+    <string name="tv_appearances">APPEARANCES: </string>
+    <string name="tv_age">AGE: </string>
+    <string name="tv_dob">DATE OF BIRTH: </string>
+    <string name="tv_country">COUNTRY: </string>
+    <string name="tv_joined">JOINED: </string>
+
 
 
 </resources>

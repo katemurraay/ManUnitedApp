@@ -2,24 +2,38 @@ package com.kmm.a117349221_assignment1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kmm.a117349221_assignment1.model.Player;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ProfileActivity extends AppCompatActivity {
     private Intent intent = null;
     private Player player = null;
     private TextView tvName = null;
+    private TextView tvSurname = null;
     private TextView tvAge = null;
     private TextView tvPosition = null;
     private TextView tvPlayerNo = null;
-    private TextView tvTeam = null;
+    private TextView tvCountry = null;
+    private TextView tvDOB = null;
+    private TextView tvJoined = null;
+    private TextView tvAppearances = null;
+
     private ImageView imageView = null;
     private Button button =null;
+    private String firstName="";
+    private String surName="";
+    private Date dob, joinedDate;
 
 
 
@@ -32,21 +46,43 @@ public class ProfileActivity extends AppCompatActivity {
         tvAge = findViewById(R.id.tvAge);
         tvName = findViewById(R.id.tvName);
         tvPlayerNo = findViewById(R.id.tvPlayerNo);
-        tvTeam = findViewById(R.id.tvTeam);
+        tvSurname = findViewById(R.id.tvSurname);
+        tvDOB = findViewById(R.id.tvDOB);
+        tvJoined = findViewById(R.id.tvJoined);
+        tvCountry = findViewById(R.id.tvCountry);
+        tvAppearances = findViewById(R.id.tvAppearances);
         tvPosition = findViewById(R.id.tvPosition);
         imageView = findViewById(R.id.ivPlayer);
         button = findViewById(R.id.button);
+        SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat format2 = new SimpleDateFormat("dd MMM yyyy");
 
         String imgName = player.getImage();
         imgName = imgName.substring(0, imgName.indexOf("."));
         int imgID = getResources().getIdentifier(imgName, "drawable", getPackageName());
         imageView.setImageResource(imgID);
 
-        tvPosition.setText(player.getPosition());
+        tvPosition.setText(player.getPosition().toUpperCase());
         tvAge.setText(player.getAge());
         tvPlayerNo.setText(player.getId());
-        tvName.setText(player.getName());
-        tvTeam.setText(player.getTeam());
+
+      firstName = player.getName().toUpperCase();
+      firstName = firstName.substring(0, firstName.indexOf(" "));
+      surName = player.getName().toUpperCase();
+      surName = surName.substring(surName.indexOf(" "));
+      Log.d("Name", surName + firstName);
+      tvName.setText(firstName);
+      tvSurname.setText(surName);
+      tvAppearances.setText(player.getAppearances());
+      tvCountry.setText(player.getCountry().toUpperCase());
+        try {
+            dob = format1.parse(player.getDob());
+            joinedDate = format1.parse(player.getJoinedDate());
+            tvDOB.setText((format2.format(dob).toUpperCase()));
+            tvJoined.setText((format2.format(joinedDate)).toUpperCase());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         button.setOnClickListener((v)->{
             intent = new Intent(ProfileActivity.this, FurtherInfoActivity.class);
             Bundle bundle = new Bundle();
