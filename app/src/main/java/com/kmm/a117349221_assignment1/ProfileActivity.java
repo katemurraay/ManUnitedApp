@@ -54,8 +54,7 @@ public class ProfileActivity extends AppCompatActivity {
         tvPosition = findViewById(R.id.tvPosition);
         imageView = findViewById(R.id.ivPlayer);
         button = findViewById(R.id.button);
-        SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
-        SimpleDateFormat format2 = new SimpleDateFormat("dd MMM yyyy");
+
 
         String imgName = player.getImage();
         imgName = imgName.substring(0, imgName.indexOf("."));
@@ -70,21 +69,21 @@ public class ProfileActivity extends AppCompatActivity {
       firstName = firstName.substring(0, firstName.indexOf(" "));
       surName = player.getName().toUpperCase();
       surName = surName.substring(surName.indexOf(" "));
-      Log.d("Name", surName + firstName);
+
       tvName.setText(firstName);
       tvSurname.setText(surName);
       tvAppearances.setText(player.getAppearances());
       tvCountry.setText(player.getCountry().toUpperCase());
         try {
-            dob = format1.parse(player.getDob());
-            joinedDate = format1.parse(player.getJoinedDate());
-            tvDOB.setText((format2.format(dob).toUpperCase()));
-            tvJoined.setText((format2.format(joinedDate)).toUpperCase());
+            dob = Util.format1.parse(player.getDob());
+            joinedDate = Util.format1.parse(player.getJoinedDate());
+            tvDOB.setText((Util.format2.format(dob).toUpperCase()));
+            tvJoined.setText((Util.format2.format(joinedDate)).toUpperCase());
         } catch (ParseException e) {
             e.printStackTrace();
         }
         button.setOnClickListener((v)->{
-            intent = new Intent(ProfileActivity.this, FurtherInfoActivity.class);
+            intent = new Intent(ProfileActivity.this, LastMatchActivity.class);
             Bundle bundle = new Bundle();
             bundle.putSerializable("player", player);
             intent.putExtras(bundle);

@@ -11,6 +11,11 @@
 
     <TextView
         android:id="@+id/tvPNo"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tv_empty" />
@@ -23,7 +28,12 @@
 
     <TextView
         android:id="@+id/tvPName"
-        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_empty" />
 </LinearLayout>

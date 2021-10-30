@@ -14,7 +14,6 @@
         android:theme="@style/Theme.117349221_Assignment1">
         <activity android:name=".LastMatchActivity"></activity>
         <activity android:name=".WebActivity" />
-        <activity android:name=".FurtherInfoActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>

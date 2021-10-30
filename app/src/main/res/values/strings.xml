@@ -1,17 +1,41 @@
 <resources>
     <string name="app_name">117349221_Assignment1</string>
 
+    <!-- Common Strings-->
     <string name="tv_empty"> </string>
+
+<!-- Home Activity-->
+    <string name="tv_midfielder">MIDFIELDERS</string>
+    <string name="tv_goalkeeper">GOALKEEPERS</string>
+    <string name="tv_forward">FORWARDS</string>
+    <string name="tv_defender">DEFENDERS</string>
+
+
+
+    <!-- Profile Activity-->
     <string name="tv_position">POSITION: </string>
     <string name="tv_appearances">APPEARANCES: </string>
     <string name="tv_age">AGE: </string>
     <string name="tv_dob">DATE OF BIRTH: </string>
     <string name="tv_country">COUNTRY: </string>
     <string name="tv_joined">JOINED: </string>
-<string name="tv_midfielder">MIDFIELDERS</string>
-<string name="tv_goalkeeper">GOALKEEPERS</string>
-<string name="tv_forward">FORWARDS</string>
-<string name="tv_defender">DEFENDERS</string>
+
+
+    <!--Last Match Activity -->
+    <string name="tv_general">GENERAL</string>
+    <string name="tv_minutes">Minutes Played</string>
+    <string name="tv_red_card">Red Cards</string>
+    <string name="tv_yellow_card">Yellow Cards</string>
+    <string name="tv_last_match">LAST MATCH</string>
+    <string name="tv_passing">PASSING</string>
+    <string name="tv_successful_passes">Successful Passes</string>
+    <string name="tv_unsuccessful_passes">Unsuccessful Passes</string>
+    <string name="tv_unsuccessful_third">Unsuccessful Final Third Passes</string>
+    <string name="tv_successful_third">Successful Final Third Passes</string>
+    <string name="tv_defending">DEFENDING</string>
+    <string name="tv_tackles">Tackles Won</string>
+    <string name="tv_duels">Duels Won</string>
+    <string name="tv_interceptions">Interceptions Won</string>
 
 
 </resources>

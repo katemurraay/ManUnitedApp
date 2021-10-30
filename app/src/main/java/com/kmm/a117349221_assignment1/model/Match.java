@@ -1,9 +1,14 @@
 package com.kmm.a117349221_assignment1.model;
 
+import android.util.Log;
+
 public class Match {
     private String playerId, name, date, passes, noPasses, thirdPasses,thirdNoPasses;
-    private String tacklesWon, duels, duelsWon, aerialDuels, aerialDuelsWon, interceptions, interceptionsWon;
-    private String minutesPlayer, redCards, yellowCards;
+
+
+
+    private String tackles, tacklesWon, duels, duelsWon, interceptions, interceptionsWon;
+    private String minutesPlayed, redCards, yellowCards;
 //<editor-fold desc= "Getters & Setters" default-state="collapsed">
     public String getPlayerId() {
         return playerId;
@@ -13,14 +18,20 @@ public class Match {
         this.playerId = playerId;
     }
 
-    public String getName() {
+    public String getMatchName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setMatchName(String name) {
         this.name = name;
     }
+    public String getTackles() {
+        return tackles;
+    }
 
+    public void setTackles(String tackles) {
+        this.tackles = tackles;
+    }
     public String getDate() {
         return date;
     }
@@ -85,21 +96,6 @@ public class Match {
         this.duelsWon = duelsWon;
     }
 
-    public String getAerialDuels() {
-        return aerialDuels;
-    }
-
-    public void setAerialDuels(String aerialDuels) {
-        this.aerialDuels = aerialDuels;
-    }
-
-    public String getAerialDuelsWon() {
-        return aerialDuelsWon;
-    }
-
-    public void setAerialDuelsWon(String aerialDuelsWon) {
-        this.aerialDuelsWon = aerialDuelsWon;
-    }
 
     public String getInterceptions() {
         return interceptions;
@@ -117,12 +113,12 @@ public class Match {
         this.interceptionsWon = interceptionsWon;
     }
 
-    public String getMinutesPlayer() {
-        return minutesPlayer;
+    public String getMinutesPlayed() {
+        return minutesPlayed;
     }
 
-    public void setMinutesPlayer(String minutesPlayer) {
-        this.minutesPlayer = minutesPlayer;
+    public void setMinutesPlayed(String minutesPlayed) {
+        this.minutesPlayed = minutesPlayed;
     }
 
     public String getRedCards() {
@@ -141,7 +137,7 @@ public class Match {
         this.yellowCards = yellowCards;
     }
 //</editor-fold>
-    public Match(String playerId, String name, String date, String passes, String noPasses, String thirdPasses, String thirdNoPasses, String tacklesWon, String duels, String duelsWon, String aerialDuels, String aerialDuelsWon, String interceptions, String interceptionsWon, String minutesPlayer, String redCards, String yellowCards) {
+    public Match(String playerId, String name, String date, String passes, String noPasses, String thirdPasses, String thirdNoPasses, String tackles, String tacklesWon, String duels, String duelsWon,  String interceptions, String interceptionsWon, String minutesPlayed, String redCards, String yellowCards) {
         this.playerId = playerId;
         this.name = name;
         this.date = date;
@@ -149,15 +145,35 @@ public class Match {
         this.noPasses = noPasses;
         this.thirdPasses = thirdPasses;
         this.thirdNoPasses = thirdNoPasses;
+        this.tackles = tackles;
         this.tacklesWon = tacklesWon;
         this.duels = duels;
         this.duelsWon = duelsWon;
-        this.aerialDuels = aerialDuels;
-        this.aerialDuelsWon = aerialDuelsWon;
         this.interceptions = interceptions;
         this.interceptionsWon = interceptionsWon;
-        this.minutesPlayer = minutesPlayer;
+        this.minutesPlayed = minutesPlayed;
         this.redCards = redCards;
         this.yellowCards = yellowCards;
     }
+
+
+public double getTotalPasses(){
+    Log.d("PAsses" , passes);
+    Double p = Double.parseDouble(passes);
+   Double noP = Double.parseDouble(noPasses);
+    return (noP + p);
+}
+    public int getPercentageTotalPasses(int total){
+        int p = Integer.parseInt(passes);
+        return ((p/total) * 100);
+}
+
+public int getThirdPercentagePasses(){
+
+        int thirdP = Integer.parseInt(thirdPasses);
+        int noThirdP = Integer.parseInt(noPasses);
+        int total = thirdP + noThirdP;
+        return ((thirdP/total) *100 );
+}
+
 }
