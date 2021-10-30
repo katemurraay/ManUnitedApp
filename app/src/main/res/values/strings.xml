@@ -14,11 +14,12 @@
 
     <!-- Profile Activity-->
     <string name="tv_position">POSITION: </string>
-    <string name="tv_appearances">APPEARANCES: </string>
-    <string name="tv_age">AGE: </string>
+    <string name="tv_appearances">APPEARANCES </string>
+    <string name="tv_age">AGE </string>
     <string name="tv_dob">DATE OF BIRTH: </string>
     <string name="tv_country">COUNTRY: </string>
     <string name="tv_joined">JOINED: </string>
+    <string name="tv_number">NUMBER</string>
 
 
     <!--Last Match Activity -->

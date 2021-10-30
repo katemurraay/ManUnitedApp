@@ -2,7 +2,9 @@ package com.kmm.a117349221_assignment1.model;
 
 import android.util.Log;
 
-public class Match {
+import java.io.Serializable;
+
+public class Match implements Serializable {
     private String playerId, name, date, passes, noPasses, thirdPasses,thirdNoPasses;
 
 
@@ -158,22 +160,12 @@ public class Match {
 
 
 public double getTotalPasses(){
-    Log.d("PAsses" , passes);
-    Double p = Double.parseDouble(passes);
+   Double p = Double.parseDouble(passes);
    Double noP = Double.parseDouble(noPasses);
-    return (noP + p);
-}
-    public int getPercentageTotalPasses(int total){
-        int p = Integer.parseInt(passes);
-        return ((p/total) * 100);
+   return (noP + p);
 }
 
-public int getThirdPercentagePasses(){
 
-        int thirdP = Integer.parseInt(thirdPasses);
-        int noThirdP = Integer.parseInt(noPasses);
-        int total = thirdP + noThirdP;
-        return ((thirdP/total) *100 );
-}
+
 
 }

@@ -77,14 +77,16 @@ public class LastMatchActivity extends AppCompatActivity {
         passingVisible = true;
         pcPassing.getDescription().setEnabled(false);
         pcPassing.setExtraOffsets(5,10,5,5);
-        pcPassing.setDragDecelerationFrictionCoef(0.95f);
+        ;
         pcPassing.setDrawHoleEnabled(true);
         pcPassing.setHoleColor(Color.WHITE);
-        pcPassing.setTransparentCircleRadius(61f);
+        pcPassing.setHoleRadius(70f);
+
 
 
         MatchAsyncTask asyncTask = new MatchAsyncTask(this, playerID);
         asyncTask.loadInBackground();
+
         imgGeneralArrow.setOnClickListener((v)->{
             generalVisible = changeTableVisibility(generalVisible, tbGeneral, imgGeneralArrow);
         });
