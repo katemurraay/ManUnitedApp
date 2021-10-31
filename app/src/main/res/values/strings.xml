@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">117349221_Assignment1</string>
+    <string name="app_name">Manchester United FC</string>
 
     <!-- Common Strings-->
     <string name="tv_empty"> </string>
@@ -12,6 +12,7 @@
 
 
 
+
     <!-- Profile Activity-->
     <string name="tv_position">POSITION: </string>
     <string name="tv_appearances">APPEARANCES </string>
@@ -20,6 +21,7 @@
     <string name="tv_country">COUNTRY: </string>
     <string name="tv_joined">JOINED: </string>
     <string name="tv_number">NUMBER</string>
+    <string name="btn_last_match">Last Match Performance</string>
 
 
     <!--Last Match Activity -->
@@ -27,7 +29,7 @@
     <string name="tv_minutes">Minutes Played</string>
     <string name="tv_red_card">Red Cards</string>
     <string name="tv_yellow_card">Yellow Cards</string>
-    <string name="tv_last_match">LAST MATCH</string>
+    <string name="tv_last_match">Last Match</string>
     <string name="tv_passing">PASSING</string>
     <string name="tv_successful_passes">Successful Passes</string>
     <string name="tv_unsuccessful_passes">Unsuccessful Passes</string>
@@ -37,6 +39,12 @@
     <string name="tv_tackles">Tackles Won</string>
     <string name="tv_duels">Duels Won</string>
     <string name="tv_interceptions">Interceptions Won</string>
+    <string name="btn_web">More Details</string>
 
+    <!-- ToolBar Menu-->
+    <string name="url">Webpage</string>
+    <string name="match">Last Match</string>
+    <string name="home">All Players</string>
+    <string name="profile">Profile</string>
 
 </resources>

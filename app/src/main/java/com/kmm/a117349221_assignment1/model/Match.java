@@ -5,7 +5,7 @@ import android.util.Log;
 import java.io.Serializable;
 
 public class Match implements Serializable {
-    private String playerId, name, date, passes, noPasses, thirdPasses,thirdNoPasses;
+    private String playerId, name, date, passes, noPasses;
 
 
 
@@ -58,21 +58,6 @@ public class Match implements Serializable {
         this.noPasses = noPasses;
     }
 
-    public String getThirdPasses() {
-        return thirdPasses;
-    }
-
-    public void setThirdPasses(String thirdPasses) {
-        this.thirdPasses = thirdPasses;
-    }
-
-    public String getThirdNoPasses() {
-        return thirdNoPasses;
-    }
-
-    public void setThirdNoPasses(String thirdNoPasses) {
-        this.thirdNoPasses = thirdNoPasses;
-    }
 
     public String getTacklesWon() {
         return tacklesWon;
@@ -139,14 +124,13 @@ public class Match implements Serializable {
         this.yellowCards = yellowCards;
     }
 //</editor-fold>
-    public Match(String playerId, String name, String date, String passes, String noPasses, String thirdPasses, String thirdNoPasses, String tackles, String tacklesWon, String duels, String duelsWon,  String interceptions, String interceptionsWon, String minutesPlayed, String redCards, String yellowCards) {
+    public Match(String playerId, String name, String date, String passes, String noPasses,  String tackles, String tacklesWon, String duels, String duelsWon,  String interceptions, String interceptionsWon, String minutesPlayed, String redCards, String yellowCards) {
         this.playerId = playerId;
         this.name = name;
         this.date = date;
         this.passes = passes;
         this.noPasses = noPasses;
-        this.thirdPasses = thirdPasses;
-        this.thirdNoPasses = thirdNoPasses;
+
         this.tackles = tackles;
         this.tacklesWon = tacklesWon;
         this.duels = duels;
@@ -165,7 +149,13 @@ public double getTotalPasses(){
    return (noP + p);
 }
 
-
+public double getPassingAccuracy(double total){
+    Double p = Double.parseDouble(passes);
+    Double result = p/total;
+    result = result * 100;
+    Log.d("RESULT", String.valueOf(result));
+        return ((p/total) *100);
+}
 
 
 }

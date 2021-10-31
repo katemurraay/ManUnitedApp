@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/tvPNo"
         android:textSize="20sp"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
         android:padding="2dp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_red_dark"
@@ -24,14 +24,16 @@
         android:id="@+id/imgPlayer"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:padding="2dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvPName"
         android:layout_margin="5dp"
-        android:padding="2dp"
+        android:padding="3dp"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

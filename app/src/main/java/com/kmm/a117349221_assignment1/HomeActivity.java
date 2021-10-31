@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
         tvTeam = findViewById(R.id.tvTeam);
         data = new XMLData(this);
         players = new PlayerAsyncTask(this).loadInBackground();
-        tvTeam.setText(players[0].getTeam());
+
 
 
 
@@ -67,7 +67,9 @@ private Context context;
             for (Player player: players){
                 findPositions(player.getPosition(), player);
             }
-
+            String team = players[0].getTeam() + " F.C.";
+            team = team.toUpperCase();
+            tvTeam.setText(team);
 
             forwardAdapter = new PlayerRecyclerViewAdapter(context, forwards);
             defenderAdapter = new PlayerRecyclerViewAdapter(context, defenders);

@@ -125,9 +125,7 @@ public class XMLData {
             NodeList dateList = document.getElementsByTagName("date");
             NodeList passesList = document.getElementsByTagName("passes");
             NodeList noPassesList = document.getElementsByTagName("nopasses");
-            NodeList thirdPassList = document.getElementsByTagName("thirdPasses");
-            NodeList thirdNoPassesList = document.getElementsByTagName("thirdNoPasses");
-            NodeList tacklesList = document.getElementsByTagName("tackles");
+              NodeList tacklesList = document.getElementsByTagName("tackles");
             NodeList tacklesWonList = document.getElementsByTagName("tacklesWon");
             NodeList duelsList = document.getElementsByTagName("duels");
             NodeList duelsWonList = document.getElementsByTagName("duelsWon");
@@ -144,8 +142,6 @@ public class XMLData {
                 String name = nameList.item(i).getFirstChild().getNodeValue();
                 String passes =passesList.item(i).getFirstChild().getNodeValue();
                 String noPasses = noPassesList.item(i).getFirstChild().getNodeValue();
-                String thirdPasses = thirdPassList.item(i).getFirstChild().getNodeValue();
-                String thirdNoPasses = thirdNoPassesList.item(i).getFirstChild().getNodeValue();
                 String tackles = tacklesList.item(i).getFirstChild().getNodeValue();
                 String tacklesWon = tacklesWonList.item(i).getFirstChild().getNodeValue();
                 String duels = duelsList.item(i).getFirstChild().getNodeValue();
@@ -157,7 +153,7 @@ public class XMLData {
                 String yellowCard= yellowCardList.item(i).getFirstChild().getNodeValue();
 
 
-               m[i] = new Match(id,name,date,passes, noPasses, thirdPasses, thirdNoPasses,tackles, tacklesWon, duels, duelsWon, interceptions, interceptionsWon,minutes, redCard, yellowCard);
+               m[i] = new Match(id,name,date,passes, noPasses,tackles, tacklesWon, duels, duelsWon, interceptions, interceptionsWon,minutes, redCard, yellowCard);
 
 
 

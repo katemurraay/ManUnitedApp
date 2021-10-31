@@ -6,8 +6,6 @@
     <date>24/10/2021 </date>
     <passes>12 </passes>
     <nopasses>6 </nopasses>
-    <thirdPasses>0</thirdPasses>
-    <thirdNoPasses>0</thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels>0 </duels>
@@ -25,8 +23,6 @@
     <date>24/10/2021 </date>
     <passes>42 </passes>
     <nopasses>7 </nopasses>
-    <thirdPasses>1</thirdPasses>
-    <thirdNoPasses>2</thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 3</duels>
@@ -44,8 +40,6 @@
     <date> 22/09/2021</date>
     <passes> 69</passes>
     <nopasses> 5</nopasses>
-    <thirdPasses>6</thirdPasses>
-    <thirdNoPasses>1</thirdNoPasses>
     <tackles> 5</tackles>
     <tacklesWon> 1 </tacklesWon>
     <duels>19 </duels>
@@ -63,8 +57,6 @@
     <date>26/01/2020 </date>
     <passes>35 </passes>
     <nopasses>7 </nopasses>
-    <thirdPasses>2</thirdPasses>
-    <thirdNoPasses>2 </thirdNoPasses>
     <tackles> 2</tackles>
     <tacklesWon> 2</tacklesWon>
     <duels> 13</duels>
@@ -82,8 +74,6 @@
     <date>24/10/2021 </date>
     <passes> 47</passes>
     <nopasses> 7</nopasses>
-    <thirdPasses>5</thirdPasses>
-    <thirdNoPasses>1 </thirdNoPasses>
     <tackles> 1</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 8</duels>
@@ -101,8 +91,6 @@
     <date>24/10/2021 </date>
     <passes> 12</passes>
     <nopasses>4 </nopasses>
-    <thirdPasses>3</thirdPasses>
-    <thirdNoPasses>2 </thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon> 0</tacklesWon>
     <duels> 3</duels>
@@ -120,8 +108,6 @@
     <date>22/09/2021</date>
     <passes>26</passes>
     <nopasses>6 </nopasses>
-    <thirdPasses>16</thirdPasses>
-    <thirdNoPasses> 2</thirdNoPasses>
     <tackles> 1</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 6</duels>
@@ -158,8 +144,7 @@
     <date>02/10/2021</date>
     <passes>34</passes>
     <nopasses>4 </nopasses>
-    <thirdPasses>20</thirdPasses>
-    <thirdNoPasses> 3</thirdNoPasses>
+
     <tackles> 0</tackles>
     <tacklesWon> 0</tacklesWon>
     <duels> 6</duels>
@@ -176,8 +161,6 @@
     <date>24/10/2021 </date>
     <passes>13 </passes>
     <nopasses> 6</nopasses>
-    <thirdPasses>9</thirdPasses>
-    <thirdNoPasses>2 </thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 8</duels>
@@ -194,8 +177,6 @@
     <date>24/10/2021 </date>
     <passes>10 </passes>
     <nopasses> 3</nopasses>
-    <thirdPasses>5</thirdPasses>
-    <thirdNoPasses>1 </thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 0</duels>
@@ -213,8 +194,6 @@
     <date>24/07/2021</date>
     <passes>5</passes>
     <nopasses>1 </nopasses>
-    <thirdPasses>0</thirdPasses>
-    <thirdNoPasses>1 </thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 0</duels>
@@ -231,9 +210,7 @@
     <name>Leicester VS Man Utd</name>
     <date>16/10/2021 </date>
     <passes> 7</passes>
-    <nopasses> 0</nopasses>
-    <thirdPasses>3</thirdPasses>
-    <thirdNoPasses>0 </thirdNoPasses>
+    <nopasses>3</nopasses>
     <tackles> 2</tackles>
     <tacklesWon>2 </tacklesWon>
     <duels> 2</duels>
@@ -251,8 +228,6 @@
     <date>07/08/2021 </date>
     <passes> 9</passes>
     <nopasses> 1</nopasses>
-    <thirdPasses>1</thirdPasses>
-    <thirdNoPasses>1 </thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 4</duels>
@@ -268,9 +243,8 @@
     <name>Wolves VS Man Utd</name>
     <date>23/05/2021 </date>
     <passes>37 </passes>
-    <nopasses>3 </nopasses>>
-    <thirdPasses>13</thirdPasses>
-    <thirdNoPasses>2 </thirdNoPasses>
+    <nopasses>3 </nopasses>
+
     <tackles> 2</tackles>
     <tacklesWon>2 </tacklesWon>
     <duels>15 </duels>
@@ -287,9 +261,7 @@
     <date>24/10/2021 </date>
     <passes> 43</passes>
     <nopasses>12 </nopasses>
-    <thirdPasses>12</thirdPasses>
-    <thirdNoPasses>3 </thirdNoPasses>
-    <tackles> 0</tackles>
+     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 5</duels>
     <duelsWon>2 </duelsWon>
@@ -305,8 +277,6 @@
     <date>24/10/2021</date>
     <passes>29 </passes>
     <nopasses> 5</nopasses>
-    <thirdPasses>3</thirdPasses>
-    <thirdNoPasses> 9</thirdNoPasses>
     <tackles> 1</tackles>
     <tacklesWon> 1</tacklesWon>
     <duels>5 </duels>
@@ -323,9 +293,7 @@
     <date>02/10/2021</date>
     <passes> 66</passes>
     <nopasses> 9</nopasses>
-    <thirdPasses>7</thirdPasses>
-    <thirdNoPasses>2 </thirdNoPasses>
-    <tackles>0</tackles>
+        <tackles>0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 6</duels>
     <duelsWon>3 </duelsWon>
@@ -341,8 +309,6 @@
     <date>24/10/2021 </date>
     <passes> 5</passes>
     <nopasses> 2</nopasses>
-    <thirdPasses>1</thirdPasses>
-    <thirdNoPasses> 0</thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon> 0</tacklesWon>
     <duels>5 </duels>
@@ -359,8 +325,6 @@
     <date>24/10/2021 </date>
     <passes>5 </passes>
     <nopasses> 1</nopasses>
-    <thirdPasses>2</thirdPasses>
-    <thirdNoPasses>0 </thirdNoPasses>
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels>1 </duels>
@@ -377,8 +341,7 @@
     <date>28/07/2021 </date>
     <passes> 22</passes>
     <nopasses> 5</nopasses>
-    <thirdPasses>1</thirdPasses>
-    <thirdNoPasses>0 </thirdNoPasses>
+
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 0</duels>
@@ -395,8 +358,6 @@
     <date>24/10/2021 </date>
     <passes>31 </passes>
     <nopasses>9 </nopasses>
-    <thirdPasses>3</thirdPasses>
-    <thirdNoPasses>6 </thirdNoPasses>
     <tackles>1 </tackles>
     <tacklesWon>1 </tacklesWon>
     <duels> 6</duels>
@@ -413,8 +374,7 @@
     <date>20/10/2021 </date>
     <passes> 10</passes>
     <nopasses>1 </nopasses>
-    <thirdPasses>4</thirdPasses>
-    <thirdNoPasses> 1</thirdNoPasses>
+
     <tackles> 2</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 3</duels>
@@ -431,8 +391,7 @@
     <date>29/09/2021</date>
     <passes>56</passes>
     <nopasses>5 </nopasses>
-    <thirdPasses>15</thirdPasses>
-    <thirdNoPasses>2 </thirdNoPasses>
+
     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 7</duels>
@@ -449,8 +408,6 @@
     <date>24/10/2021 </date>
     <passes> 28</passes>
     <nopasses> 3</nopasses>
-    <thirdPasses>6</thirdPasses>
-    <thirdNoPasses>0 </thirdNoPasses>
     <tackles> 1</tackles>
     <tacklesWon>1 </tacklesWon>
     <duels> 12</duels>
@@ -467,9 +424,7 @@
     <date>22/09/2021 </date>
     <passes> 18</passes>
     <nopasses> 5</nopasses>
-    <thirdPasses>0</thirdPasses>
-    <thirdNoPasses>3 </thirdNoPasses>
-    <tackles> 0</tackles>
+     <tackles> 0</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 0</duels>
     <duelsWon>0 </duelsWon>
@@ -485,8 +440,6 @@
     <date>20/10/2021 </date>
     <passes> 1</passes>
     <nopasses> 3</nopasses>
-    <thirdPasses>0</thirdPasses>
-    <thirdNoPasses>3 </thirdNoPasses>
     <tackles>0 </tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 0</duels>
@@ -503,8 +456,7 @@
     <date>22/09/2021 </date>
     <passes>54 </passes>
     <nopasses>10 </nopasses>
-    <thirdPasses>22</thirdPasses>
-    <thirdNoPasses>7 </thirdNoPasses>
+
     <tackles>2 </tackles>
     <tacklesWon>2 </tacklesWon>
     <duels> 12</duels>
@@ -521,8 +473,7 @@
     <date>24/10/2021</date>
     <passes>32 </passes>
     <nopasses>6 </nopasses>
-    <thirdPasses>12</thirdPasses>
-    <thirdNoPasses>1 </thirdNoPasses>
+
     <tackles> 1</tackles>
     <tacklesWon>0 </tacklesWon>
     <duels> 9</duels>

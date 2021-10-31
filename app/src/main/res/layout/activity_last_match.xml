@@ -6,23 +6,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LastMatchActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:title="@string/tv_last_match"
+        app:titleTextColor="@color/crimson"
+        app:theme="@style/MyActionBar"
+        android:id="@+id/tbMatch"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:padding="5dp"
+        android:background="@drawable/layout_profile_shape"
+       android:orientation="vertical">
     <TextView
         android:id="@+id/tvDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:padding="1dp"
-        android:textStyle="italic"
+        android:textColor="@color/white"
         android:text="@string/tv_empty"
-        android:textSize="18sp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="1dp"
-        android:text="@string/tv_last_match"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textSize="22sp" />
+
 
     <TextView
         android:id="@+id/tvMName"
@@ -30,17 +39,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:padding="1dp"
-
+        android:textColor="@color/white"
         android:text="@string/tv_empty"
-        android:textSize="20sp" />
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+   </LinearLayout>
 
 
-
-    <View
-        android:id="@+id/view3"
-        android:background="@android:color/darker_gray"
-        android:layout_width="match_parent"
-        android:layout_height="2dp" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -48,31 +54,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
 
-    <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/llGeneral"
+                android:orientation="horizontal">
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:text="@string/tv_general"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+                <TextView
 
-    <ImageView
-        android:id="@+id/imgGeneralArrow"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:src="@drawable/ic_arrow_up"
-        tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_width="285dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="@string/tv_general"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-</LinearLayout>
+                <ImageView
+                    android:id="@+id/imgGeneralArrow"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_arrow_up"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:contentDescription="@string/tv_passing" />
+
+            </LinearLayout>
 
     <TableLayout
         android:id="@+id/tlGeneral"
@@ -99,11 +111,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="5dp"
+
                 android:text="@string/tv_minutes"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvMinutes"
+                android:textColor="@color/crimson"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -182,32 +196,126 @@
         </TableRow>
 
     </TableLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/llPassing"
+                android:orientation="horizontal">
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="5dp"
-            android:text="@string/tv_defending"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:layout_width="285dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="@string/tv_passing"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imgDefenceArrow"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:src="@drawable/ic_arrow_up"
-            tools:srcCompat="@tools:sample/avatars" />
+                <ImageView
+                    android:id="@+id/imgPassing"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_arrow_up"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
 
-    </LinearLayout>
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pcPassing"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center">
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/tlPassing"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="15dp"
+
+                        android:padding="5dp"
+                        android:src="@drawable/successful_background" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:text="@string/tv_successful_passes"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="15dp"
+
+                        android:padding="5dp"
+                        android:src="@drawable/unsuccessful_background" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:text="@string/tv_unsuccessful_passes"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/llDefending"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="285dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="@string/tv_defending"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgDefenceArrow"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_arrow_up"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </LinearLayout>
 
     <TableLayout
         android:layout_width="match_parent"
@@ -234,7 +342,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -289,35 +397,19 @@
         </TableRow>
     </TableLayout>
 
-            <LinearLayout
+            <Button
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:id="@+id/btnWebPage"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_margin="10dp"
-                    android:padding="5dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_passing" />
-
-                <ImageView
-                    android:id="@+id/imgPassing"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_arrow_up"
-                    tools:srcCompat="@tools:sample/avatars" />
-            </LinearLayout>
-            <com.github.mikephil.charting.charts.PieChart
-                android:layout_height="400dp"
-                android:layout_width="400dp"
-                android:id="@+id/pcPassing"/>
-
+                android:layout_height="wrap_content"
+                android:background="@drawable/web_button_shape"
+                android:textColor="@color/dark_grey"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/btn_web"
+                android:drawableTint="@color/dark_grey"
+                android:drawableEnd="@drawable/ic_arrow_forward"/>
 
 
         </LinearLayout>

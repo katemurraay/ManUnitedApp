@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="@string/url"
+    android:id="@+id/url"
+    android:icon="@drawable/ic_web_page"
+    />
+    <item
+        android:id="@+id/lastMatch"
+        android:icon="@drawable/soccer_ball"
+        android:title="@string/match"/>
+    <item
+        android:id="@+id/allPlayers"
+        android:icon="@drawable/jersey"
+        android:title="@string/home"/>
+</menu>

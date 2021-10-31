@@ -2,12 +2,17 @@ package com.kmm.a117349221_assignment1;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,7 +23,6 @@ import android.widget.TextView;
 import com.kmm.a117349221_assignment1.model.Player;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -36,7 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView imageView = null;
 
     private String firstName="";
-
+    private Button btnLastMatch = null;
     private Date dob, joinedDate;
 
 
@@ -60,6 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
         imageView = findViewById(R.id.ivPlayer);
         tbProfile = findViewById(R.id.tbProfile);
         tbProfile.setTitle(player.getName());
+        btnLastMatch = findViewById(R.id.btnLastMatch);
         setSupportActionBar(tbProfile);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -90,14 +95,30 @@ public class ProfileActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
+        btnLastMatch.setOnClickListener((v)->{
+            Intent intent = new Intent(ProfileActivity.this, LastMatchActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("player", player);
+            intent.putExtras(bundle);
+            startActivity(intent);
+        });
 
     }
 
+    @SuppressLint("RestrictedApi")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_toolbar, menu);
+      /*Code below is base on StackOverflow Answer:
+      Question: "menu icon not showing in toolbar",
+      Answered by: Francisco Sales,
+      https://stackoverflow.com/a/53283000
+       */
+               if (menu instanceof MenuBuilder) {
+            ((MenuBuilder) menu).setOptionalIconsVisible(true);
+        } //END
+        menuInflater.inflate(R.menu.menu_profile, menu);
+
         return true;
     }
 
@@ -105,28 +126,30 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
-        Bundle bundle;
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
                 break;
             case R.id.url:
                 intent = new Intent(ProfileActivity.this, WebActivity.class);
-                bundle = new Bundle();
-                bundle.putString("url", player.getUrl());
-                intent.putExtras(bundle);
-                startActivity(intent);
+                populateIntent(intent);
                 break;
             case R.id.lastMatch:
                 intent = new Intent(ProfileActivity.this, LastMatchActivity.class);
-                bundle = new Bundle();
-                bundle.putSerializable("player", player);
-                intent.putExtras(bundle);
+                populateIntent(intent);
+                break;
+            case R.id.allPlayers:
+                intent = new Intent(ProfileActivity.this, HomeActivity.class);
                 startActivity(intent);
                 break;
 
-
         }
         return true;
+    }
+    public void populateIntent(Intent intent){
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("player", player);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

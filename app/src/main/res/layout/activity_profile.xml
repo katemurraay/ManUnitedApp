@@ -11,10 +11,9 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_dark"
         android:padding="10dp"
-        app:theme="@style/ThemeOverlay.AppCompat"
-        app:titleTextColor="@color/white"
+app:titleTextColor="@color/crimson"
+        app:theme="@style/MyActionBar"
         android:id="@+id/tbProfile"/>
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +26,7 @@
     <ImageView
         android:id="@+id/ivPlayer"
         android:layout_width="match_parent"
-                android:layout_height="300dp"
+        android:layout_height="300dp"
         android:layout_margin="1dp"
         android:padding="2dp"
         tools:srcCompat="@tools:sample/avatars"
@@ -58,7 +57,7 @@
     android:orientation="vertical"
     android:padding="2dp"
     android:layout_margin="10dp"
-    android:background="@drawable/layout_shape">
+    android:background="@drawable/layout_profile_shape">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -255,7 +254,26 @@
                 android:padding="5dp"
                 android:textColor="@color/white"
                 android:text="@string/tv_empty"
-                             android:textSize="18sp" />
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btnLastMatch"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/match_button_shape"
+                android:textColor="@color/white"
+                android:drawableEnd="@drawable/ic_arrow_forward"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textSize="18sp"
+                android:text="@string/btn_last_match" />
         </TableRow>
     </TableLayout>
 </LinearLayout>

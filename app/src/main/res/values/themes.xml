@@ -15,7 +15,22 @@
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle"> @style/MyActionBar</item>
+        <item name="actionOverflowButtonStyle">@style/MyActionBar</item>
     </style>
 
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/light_grey</item>
+        <item name="background">@color/light_grey</item>
+        <item name="android:title">@color/crimson</item>
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:displayOptions">showTitle|showHome|homeAsUp</item>
+        <item name="android:icon">@color/crimson</item>
+        <item name="android:tint">@color/crimson</item>
+        <item name="tabIconTint">@color/crimson</item>
+        <item name="android:textColor">@color/dark_grey</item>
+
+
+    </style>
 
 </resources>
