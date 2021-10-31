@@ -47,4 +47,16 @@
     <string name="home">All Players</string>
     <string name="profile">Profile</string>
 
+
+    <!--Error Messages-->
+    <string name="url_error">Error Loading Url</string>
+    <string name="player_xml_error">Error Retrieving Player Data</string>
+    <string name="match_xml_error">Error Retrieving Match Data</string>
+
+
+    <!--Design Specifications -->
+    <string name="small_text_size">18sp</string>
+    <string name="large_text_size">20sp</string>
+    <string name="heading_text_size">25sp</string>
+
 </resources>

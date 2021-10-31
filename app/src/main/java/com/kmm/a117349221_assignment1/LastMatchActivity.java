@@ -28,6 +28,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.github.mikephil.charting.animation.Easing;
@@ -111,31 +112,20 @@ private  Player player;
         actionBar.setDisplayHomeAsUpEnabled(true);
         pcPassing.setDrawHoleEnabled(true);
         pcPassing.setHoleColor(Color.WHITE);
-        pcPassing.setHoleRadius(75f);
+        pcPassing.setHoleRadius(65f);
 
 
 
         MatchAsyncTask asyncTask = new MatchAsyncTask(this, playerID);
-try {
-    asyncTask.loadInBackground();
-} catch (Exception e){
-    e.printStackTrace();
-}
-//OnClick Listeners
-        imgGeneralArrow.setOnClickListener((v)-> generalVisible = changeTableVisibility(generalVisible, tlGeneral, imgGeneralArrow));
-        imgDefendingArrow.setOnClickListener((v)-> defendingVisible = changeTableVisibility(defendingVisible, tlDefending, imgDefendingArrow));
+        try {
+            asyncTask.loadInBackground();
+        } catch (Exception e){
+            e.printStackTrace();
+            Toast.makeText(this, R.string.match_xml_error, Toast.LENGTH_SHORT).show();
+        }
+        //OnClick Listeners
         llGeneral.setOnClickListener((v)-> generalVisible = changeTableVisibility(generalVisible, tlGeneral, imgGeneralArrow));
         llDefending.setOnClickListener((v)-> defendingVisible = changeTableVisibility(defendingVisible, tlDefending, imgDefendingArrow));
-
-        imgPassingArrow.setOnClickListener((v)->{
-            if (passingVisible){
-                pcPassing.setVisibility(View.GONE);
-
-            } else{
-                pcPassing.setVisibility(View.VISIBLE);
-                      }
-            passingVisible = changeTableVisibility(passingVisible, tlPassing, imgPassingArrow);
-        });
         llPassing.setOnClickListener((v)-> {
              if (passingVisible){
                 pcPassing.setVisibility(View.GONE);
@@ -236,25 +226,26 @@ try {
         @Nullable
         @Override
         public Void loadInBackground() {
+            try{
             XMLData xml = new XMLData(c);
             Match match =  xml.getLastMatch(playerId);
             tvRedCard.setText(match.getRedCards());
             tvMinutes.setText(match.getMinutesPlayed());
             tvYellowCard.setText(match.getYellowCards());
             tvName.setText(match.getMatchName());
-            String duels = match.getDuelsWon() + " / " + match.getDuels();
+            String duels = match.getDuelsWon() + " " +"/" + " " + match.getDuels();
             tvDuels.setText(duels);
-            String interceptions = match.getInterceptionsWon() + " / " + match.getInterceptions();
+            String interceptions = match.getInterceptionsWon() +" " +"/" + " "  + match.getInterceptions();
             tvInceptions.setText(interceptions);
-            String tackles = match.getTacklesWon() + " / " + match.getTackles();
+            String tackles = match.getTacklesWon() + " " +"/" + " " + match.getTackles();
             tvTackles.setText(tackles);
-            if (!(match.getDuelsWon().contains("0"))){
+            if (!(match.getDuels().contains("0"))){
                 tvDuels.setTextColor(getResources().getColor(R.color.crimson));
             }
-            if(!(match.getInterceptionsWon().contains("0"))){
+            if(!(match.getInterceptions().contains("0"))){
                 tvInceptions.setTextColor(getResources().getColor(R.color.crimson));
             }
-            if(!(match.getTacklesWon().contains("0"))){
+            if(!(match.getTackles().contains("0"))){
                 tvTackles.setTextColor(getResources().getColor(R.color.crimson));
             } if(!(match.getRedCards().contains("0"))){
                 tvRedCard.setTextColor(getResources().getColor(R.color.crimson));
@@ -262,7 +253,7 @@ try {
             if (!(match.getYellowCards().contains("0"))){
                 tvYellowCard.setTextColor(getResources().getColor(R.color.crimson));
             }
-             try {
+
                 Date matchDate = Util.format1.parse(match.getDate());
                 String strDate = Util.format2.format(matchDate);
                 tvDate.setText(strDate);
@@ -277,7 +268,7 @@ https://www.youtube.com/watch?v=MiVx3AQD_PI
                  PieDataSet dataSet = new PieDataSet(yValues, "Passes");
                  dataSet.setSliceSpace(3f);
                  dataSet.setSelectionShift(5f);
-                 dataSet.setYValuePosition(PieDataSet.ValuePosition.OUTSIDE_SLICE);
+                 dataSet.setYValuePosition(PieDataSet.ValuePosition.INSIDE_SLICE);
 
 
                  int[] allColors = c.getResources().getIntArray(R.array.pie_chart_colours);
@@ -289,11 +280,10 @@ https://www.youtube.com/watch?v=MiVx3AQD_PI
                      }
                  });
                  PieData data = new PieData(dataSet);
-                 data.setValueTextSize(16f);
-                 data.setValueTextColor(Color.BLACK);
+                 data.setValueTextSize(18f);
+                 data.setValueTextColor(Color.WHITE);
 
                 double totalPasses = match.getTotalPasses();
-                double percentageAccuracy = match.getPassingAccuracy(totalPasses);
                 String strTotalPasses = String.valueOf(totalPasses);
                 strTotalPasses = strTotalPasses.substring(0, strTotalPasses.indexOf("."));
                 pcPassing.setCenterText(strTotalPasses + " \n Total Passes");
@@ -306,6 +296,8 @@ https://www.youtube.com/watch?v=MiVx3AQD_PI
 
             } catch (Exception e) {
                 e.printStackTrace();
+
+
             }
 
 

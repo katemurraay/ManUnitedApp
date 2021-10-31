@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.117349221_Assignment1">
-        <activity android:name=".LastMatchActivity"></activity>
+        <activity android:name=".LastMatchActivity"/>
         <activity android:name=".WebActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".HomeActivity">

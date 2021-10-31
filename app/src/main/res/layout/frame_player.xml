@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/tvPNo"
-        android:textSize="20sp"
+        android:theme="@style/FontSizeMedium"
         android:layout_margin="3dp"
         android:padding="2dp"
         android:textStyle="bold"
@@ -33,7 +33,7 @@
         android:layout_margin="2dp"
         android:padding="3dp"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:theme="@style/FontSizeSmall"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

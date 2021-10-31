@@ -93,6 +93,7 @@ public class ProfileActivity extends AppCompatActivity {
             tvJoined.setText((Util.format2.format(joinedDate)).toUpperCase());
         } catch (ParseException e) {
             e.printStackTrace();
+
         }
 
         btnLastMatch.setOnClickListener((v)->{

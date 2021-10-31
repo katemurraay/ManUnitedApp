@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".WebActivity">
+
 <androidx.appcompat.widget.Toolbar
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/tbWeb"
     app:titleTextColor="@color/white"
     app:theme="@style/MyActionBar"
+    
    android:padding="10dp"/>
     <WebView
         android:id="@+id/webView"

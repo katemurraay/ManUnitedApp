@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-             app:titleTextColor="@color/white"
+        app:titleTextColor="@color/white"
         app:theme="@style/MyActionBar"
         android:id="@+id/tbMatch"/>
 
@@ -29,7 +29,7 @@
         android:padding="1dp"
         android:textColor="@color/white"
         android:text="@string/tv_empty"
-        android:textSize="22sp" />
+        android:theme="@style/FontSizeMedium" />
 
 
     <TextView
@@ -41,7 +41,7 @@
         android:textColor="@color/white"
         android:text="@string/tv_empty"
         android:textStyle="bold"
-        android:textSize="25sp" />
+        android:theme="@style/FontSizeLarge" />
 
    </LinearLayout>
 
@@ -69,7 +69,7 @@
                     android:padding="5dp"
                     android:text="@string/tv_general"
                     android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
+                    android:theme="@style/FontSizeMedium"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -112,7 +112,7 @@
                 android:padding="5dp"
 
                 android:text="@string/tv_minutes"
-                android:textSize="20sp" />
+                android:theme="@style/FontSizeMedium" />
 
             <TextView
                 android:id="@+id/tvMinutes"
@@ -122,7 +122,7 @@
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25sp"
+                android:theme="@style/FontSizeLarge"
                 android:textStyle="bold" />
 
 
@@ -147,7 +147,7 @@
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:text="@string/tv_red_card"
-                android:textSize="20sp" />
+                android:theme="@style/FontSizeMedium" />
 
             <TextView
                 android:id="@+id/tvRedCard"
@@ -156,7 +156,7 @@
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25sp"
+                android:theme="@style/FontSizeLarge"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -181,7 +181,7 @@
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:text="@string/tv_yellow_card"
-                android:textSize="20sp" />
+                android:theme="@style/FontSizeMedium" />
 
             <TextView
                 android:id="@+id/tvYellowCard"
@@ -190,7 +190,7 @@
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25sp"
+                android:theme="@style/FontSizeLarge"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -210,7 +210,7 @@
                     android:padding="5dp"
                     android:text="@string/tv_passing"
                     android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
+                   android:theme="@style/FontSizeMedium"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -229,9 +229,9 @@
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_margin="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"/>
 
-            </com.github.mikephil.charting.charts.PieChart>
+
 
             <TableLayout
                 android:layout_marginTop="10dp"
@@ -258,7 +258,7 @@
                         android:layout_margin="10dp"
                         android:padding="5dp"
                         android:text="@string/tv_successful_passes"
-                        android:textSize="20sp"
+                        android:theme="@style/FontSizeMedium"
                         android:textStyle="bold" />
                 </TableRow>
 
@@ -280,7 +280,7 @@
                         android:layout_margin="10dp"
                         android:padding="5dp"
                         android:text="@string/tv_unsuccessful_passes"
-                        android:textSize="20sp"
+                      android:theme="@style/FontSizeMedium"
                         android:textStyle="bold" />
                 </TableRow>
 
@@ -301,7 +301,7 @@
                     android:padding="5dp"
                     android:text="@string/tv_defending"
                     android:textColor="@color/dark_grey"
-                    android:textSize="20sp"
+                   android:theme="@style/FontSizeMedium"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -331,7 +331,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_duels"
-                android:textSize="20sp" />
+                android:theme="@style/FontSizeMedium" />
 
 
             <TextView
@@ -341,7 +341,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25sp"
+                android:theme="@style/FontSizeLarge"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -356,7 +356,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_tackles"
-                android:textSize="20sp" />
+                android:theme="@style/FontSizeMedium" />
 
 
             <TextView
@@ -366,7 +366,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25sp"
+                android:theme="@style/FontSizeLarge"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -381,7 +381,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_interceptions"
-                android:textSize="20sp" />
+                android:theme="@style/FontSizeMedium" />
 
 
             <TextView
@@ -391,7 +391,7 @@
                 android:layout_margin="10dp"
                 android:padding="5dp"
                 android:text="@string/tv_empty"
-                android:textSize="25sp"
+                android:theme="@style/FontSizeLarge"
                 android:textStyle="bold" />
         </TableRow>
     </TableLayout>
@@ -404,7 +404,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/web_button_shape"
                 android:textColor="@color/dark_grey"
-                android:textSize="20sp"
+                android:theme="@style/FontSizeMedium"
                 android:textStyle="bold"
                 android:text="@string/btn_web"
                 android:drawableTint="@color/dark_grey"

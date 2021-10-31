@@ -10,7 +10,7 @@
     <color name="crimson">#d20222</color>
     <color name="deep_red">#660000</color>
     <color name="dark_grey">#262626</color>
-    <color name="green"> #33cc33</color>
+    <color name="green"> #29a329</color>
     <color name="light_grey">#cccccc</color>
 
     <integer-array name="pie_chart_colours">

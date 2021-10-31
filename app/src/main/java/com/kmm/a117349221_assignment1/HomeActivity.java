@@ -4,6 +4,7 @@ import android.content.AsyncTaskLoader;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -58,7 +59,7 @@ private Context context;
 
         @Override
         public Player[] loadInBackground() {
-
+try{
             Player[] players = data.getData();
             defenders = new ArrayList<Player>();
             midfielders = new ArrayList<Player>();
@@ -79,6 +80,12 @@ private Context context;
             setRecyclerView(rcDefender, defenderAdapter);
             setRecyclerView(rcMidfielder, midfieldAdapter);
             setRecyclerView(rcGoalkeeper, goalAdapter);
+
+        } catch (Exception e){
+    e.printStackTrace();
+    players = null;
+    Toast.makeText(context, R.string.player_xml_error, Toast.LENGTH_SHORT).show();
+}
             return players;
         }
     }

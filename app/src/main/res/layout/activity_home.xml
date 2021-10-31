@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="5dp"
-        android:textSize="23sp"
+        android:theme="@style/FontSizeLarge"
         android:textStyle="bold"
         android:textAlignment="viewEnd"
         android:text="@string/tv_empty"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="2dp"
-            android:textSize="22sp"
+            android:theme="@style/FontSizeMedium"
             android:textStyle="bold"
             android:textColor=" @android:color/holo_red_dark"
             android:text="@string/tv_defender" />
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="2dp"
-            android:textSize="22sp"
+            android:theme="@style/FontSizeMedium"
             android:textStyle="bold"
             android:textColor=" @android:color/holo_red_dark"
             android:text="@string/tv_midfielder" />
@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="2dp"
-            android:textSize="22sp"
+            android:theme="@style/FontSizeMedium"
             android:textStyle="bold"
             android:textColor=" @android:color/holo_red_dark"
             android:text="@string/tv_forward" />
