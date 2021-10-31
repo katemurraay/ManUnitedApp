@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        app:title="@string/tv_last_match"
-        app:titleTextColor="@color/crimson"
+             app:titleTextColor="@color/white"
         app:theme="@style/MyActionBar"
         android:id="@+id/tbMatch"/>
 
@@ -20,7 +19,7 @@
        android:layout_height="wrap_content"
        android:layout_margin="10dp"
        android:padding="5dp"
-        android:background="@drawable/layout_profile_shape"
+        android:background="@drawable/layout_shape"
        android:orientation="vertical">
     <TextView
         android:id="@+id/tvDate"

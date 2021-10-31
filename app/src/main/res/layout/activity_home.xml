@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/home_background">
+    android:background="@drawable/players_background">
 
     <TextView
         android:id="@+id/tvTeam"
@@ -13,20 +13,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="5dp"
-        android:textSize="25sp"
+        android:textSize="23sp"
         android:textStyle="bold"
-        android:textAlignment="center"
+        android:textAlignment="viewEnd"
         android:text="@string/tv_empty"
         android:textColor="@color/white" />
 
-        <ImageView
-            android:id="@+id/imgTeam"
-            android:layout_width="135dp"
-            android:layout_height="135dp"
-            android:layout_margin="5dp"
-            android:padding="5dp"
-            android:src="@drawable/manunited_logo"
-            tools:srcCompat="@tools:sample/avatars" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="90dp"/>
 
 
 

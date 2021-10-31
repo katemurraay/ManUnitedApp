@@ -9,8 +9,6 @@
         />
     <item
         android:id="@+id/home"
-        android:iconTint="@color/crimson"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/jersey"
         android:title="@string/home"/>
     <item android:icon="@drawable/ic_profile"

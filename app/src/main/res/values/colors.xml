@@ -7,11 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-<color name="crimson">#d20222</color>
+    <color name="crimson">#d20222</color>
     <color name="deep_red">#660000</color>
-  <color name="dark_grey">#262626</color>
+    <color name="dark_grey">#262626</color>
     <color name="green"> #33cc33</color>
-    <color name="light_grey">	#f2f2f2</color>
+    <color name="light_grey">#cccccc</color>
 
     <integer-array name="pie_chart_colours">
     <item>@color/green</item>

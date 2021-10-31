@@ -76,7 +76,7 @@ private  Player player;
         Intent previousIntent = getIntent();
         player =(Player) previousIntent.getSerializableExtra("player");
         int playerID = Integer.parseInt(player.getId());
-        // <editor-fold defaultstate= "collapsed" desc = "Wiring Objects" >
+        // <editor-fold default-state= "collapsed" desc = "Wiring Objects" >
         tvMinutes = findViewById(R.id.tvMinutes);
         tvRedCard = findViewById(R.id.tvRedCard);
         tvYellowCard = findViewById(R.id.tvYellowCard);
@@ -96,13 +96,16 @@ private  Player player;
         llDefending = findViewById(R.id.llDefending);
         llGeneral = findViewById(R.id.llGeneral);
         llPassing = findViewById(R.id.llPassing);
+        tbLastMatch = findViewById(R.id.tbMatch);
         // </editor-fold>
         generalVisible = true;
         defendingVisible =true;
         passingVisible = true;
         pcPassing.getDescription().setEnabled(false);
         pcPassing.setExtraOffsets(5,10,5,5);
-        tbLastMatch = findViewById(R.id.tbMatch);
+        String strRes = getResources().getString(R.string.tv_last_match);
+        String title = player.getName()+ "'s " + strRes;
+        tbLastMatch.setTitle(title);
         setSupportActionBar(tbLastMatch);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -189,6 +192,10 @@ try {
             case R.id.home:
                 intent = new Intent(LastMatchActivity.this, HomeActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.profile:
+                intent = new Intent(LastMatchActivity.this, ProfileActivity.class);
+                populateIntent(intent);
                 break;
 
 

@@ -35,7 +35,7 @@ public class WebActivity extends AppCompatActivity {
         url = player.getUrl();
         webView = (WebView) findViewById(R.id.webView);
         toolbar = findViewById(R.id.tbWeb);
-        String title = player.getName() + " Webpage";
+        String title = player.getName() + "'s Webpage";
         toolbar.setTitle(title);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
