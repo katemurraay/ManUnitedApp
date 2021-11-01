@@ -239,18 +239,18 @@ private  Player player;
             tvInceptions.setText(interceptions);
             String tackles = match.getTacklesWon() + " " +"/" + " " + match.getTackles();
             tvTackles.setText(tackles);
-            if (!(match.getDuels().contains("0"))){
+            if (!(match.getDuels().trim().equals("0"))){
                 tvDuels.setTextColor(getResources().getColor(R.color.crimson));
             }
-            if(!(match.getInterceptions().contains("0"))){
+            if(!(match.getInterceptions().trim().equals("0"))){
                 tvInceptions.setTextColor(getResources().getColor(R.color.crimson));
             }
-            if(!(match.getTackles().contains("0"))){
+            if(!(match.getTackles().trim().equals("0"))){
                 tvTackles.setTextColor(getResources().getColor(R.color.crimson));
-            } if(!(match.getRedCards().contains("0"))){
+            } if(!(match.getRedCards().trim().equals("0"))){
                 tvRedCard.setTextColor(getResources().getColor(R.color.crimson));
             }
-            if (!(match.getYellowCards().contains("0"))){
+            if (!(match.getYellowCards().trim().equals("0"))){
                 tvYellowCard.setTextColor(getResources().getColor(R.color.crimson));
             }
 

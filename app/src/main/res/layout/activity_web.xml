@@ -13,7 +13,7 @@
     android:id="@+id/tbWeb"
     app:titleTextColor="@color/white"
     app:theme="@style/MyActionBar"
-    
+
    android:padding="10dp"/>
     <WebView
         android:id="@+id/webView"
