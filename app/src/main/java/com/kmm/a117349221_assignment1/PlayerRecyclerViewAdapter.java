@@ -3,6 +3,7 @@ package com.kmm.a117349221_assignment1;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +44,17 @@ public class PlayerRecyclerViewAdapter extends RecyclerView.Adapter<PlayerRecycl
     @Override
     public void onBindViewHolder(@NonNull RecyclerCustomView holder, int position) {
         Player player = players.get(position);
+        String firstName = player.getName();
+        firstName = firstName.substring(0, firstName.indexOf(" "));
+        String surName = player.getName();
+        surName = surName.substring(surName.indexOf(" "));
+
+        if(surName.length()> 10){
+            String name = firstName +"\n" +surName;
+            holder.tvPName.setText(name);
+        } else{
         holder.tvPName.setText(player.getName());
+        }
         holder.tvPNo.setText(player.getId());
         String imgName = player.getImage();
         imgName = imgName.substring(0, imgName.indexOf("."));

@@ -35,7 +35,13 @@
         android:textAlignment="center"
         android:theme="@style/FontSizeSmall"
         android:textStyle="bold"
+        android:maxLines="10"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_empty" />
+        android:layout_height="50dp"
+        android:text="@string/tv_empty"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+
+
+        />
 </LinearLayout>
